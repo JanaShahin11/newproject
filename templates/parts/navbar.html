@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>index</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">My Website</div>
+
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" id="menuBtn">☰</button>
+
+    <ul class="nav-links" id="nav">
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'products' %}">Products</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
